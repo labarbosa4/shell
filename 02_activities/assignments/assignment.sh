@@ -18,7 +18,8 @@ cd dir2
 touch file1.txt file2.txt file3.txt file4.txt file5.txt
 
 # 4. Append the words "Hello world" to dir2/file3.txt
-echo "Hello world" >> dir2/file3.txt
+cd dir2
+echo "Hello world" >> file3.txt
 
 # 5. Verify that file3.txt contains the words "hello world" by printing the contents of the file in the terminal
 cat file3.txt
@@ -28,7 +29,7 @@ cd dir2
 rm file4.txt
 
 # 7. Delete directories dir4 and dir5 including all their contents (if any)
-cd
+cd dir2
 rm -r dir4
 rm -r dir5
 
